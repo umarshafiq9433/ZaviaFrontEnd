@@ -18,7 +18,6 @@
 import React from "react";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import PageHeader from "components/PageHeader/PageHeader.js";
 import Footer from "components/Footer/Footer.js";
 
@@ -34,8 +33,13 @@ import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
+import { Row } from "reactstrap";
+import JobsTab from "components/Jobs/JobsTab";
+import PostJob from "components/Jobs/PostJob";
+import SignUp from "components/Forms/SignUp";
+import Plans from "components/plans/Plans";
 
-export default function Index() {
+export default function Homepage() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
     // Specify how to clean up after this effect:
@@ -45,21 +49,13 @@ export default function Index() {
   }, []);
   return (
     <>
-      <IndexNavbar />
       <div className="wrapper">
-        {/* <PageHeader /> */}
+        <PageHeader />
         <div className="main">
-          <Basics />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <JavaScript />
-          <NucleoIcons />
-          <Signup />
-          <Examples />
-          <Download />
+          <JobsTab />
+          <PostJob />
+          <Plans />
+          <SignUp />
         </div>
         <Footer />
       </div>

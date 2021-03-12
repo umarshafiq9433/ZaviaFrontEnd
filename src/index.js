@@ -27,11 +27,16 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import IndexNavbar from "components/Navbars/IndexNavbar";
+import Homepage from "views/homepage/Homepage";
 
 ReactDOM.render(
   <BrowserRouter>
+    <IndexNavbar />
+
     <Switch>
-      <Route path="/components" render={(props) => <Index {...props} />} />
+      <Route exact path="/" render={(props) => <Homepage {...props} />} />
+      <Route exact path="/example" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
@@ -44,7 +49,7 @@ ReactDOM.render(
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect from="/" to="/components" />
+      <Redirect from="/" to="/example" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
