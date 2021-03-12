@@ -32,11 +32,9 @@ export default function PageHeader() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">BLK• React</h1>
-          <h3 className="d-none d-sm-block">
-            A beautiful Design System for Bootstrap 4 (reactstrap) and React.
-            It's Free and Open Source.
-          </h3>
+          <img src={require("assets/img/logo.png").default} width="300px" />
+          <h1 className="h1-seo">Zavia Groups</h1>
+          <h3 className="d-none d-sm-block">Get a job of your dreams</h3>
         </div>
       </Container>
     </div>
