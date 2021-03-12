@@ -15,18 +15,10 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+import SearchForm from "components/Forms/SearchForm";
 import React from "react";
 
-// core components
-import PageHeader from "components/PageHeader/PageHeader.js";
-
-// sections for this page/view
-import JobsTab from "components/Jobs/JobsTab";
-import PostJob from "components/Jobs/PostJob";
-import SignUp from "components/Forms/SignUp";
-import Plans from "components/plans/Plans";
-
-export default function Homepage() {
+export default function SearchJobs() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
     // Specify how to clean up after this effect:
@@ -36,12 +28,9 @@ export default function Homepage() {
   }, []);
   return (
     <>
-      <PageHeader />
       <div className="main">
-        <JobsTab />
-        <PostJob />
-        <Plans />
-        <SignUp />
+        <h1 className="text-center py-3">Search Jobs</h1>
+        <SearchForm />
       </div>
     </>
   );
