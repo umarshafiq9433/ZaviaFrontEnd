@@ -31,6 +31,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import Homepage from "views/homepage/Homepage";
 import Footer from "components/Footer/Footer";
 import SearchJobs from "views/jobs/SearchJobs";
+import Employer from "views/Employer/Employer";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -38,6 +39,11 @@ ReactDOM.render(
     <div className="wrapper">
       <Switch>
         <Route exact path="/" render={(props) => <Homepage {...props} />} />
+        <Route
+          exact
+          path="/Employer"
+          render={(props) => <Employer {...props} />}
+        />
         <Route
           exact
           path="/jobs"
