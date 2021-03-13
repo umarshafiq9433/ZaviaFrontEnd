@@ -44,8 +44,6 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import Footer from "components/Footer/Footer.js";
 
 const carouselItems = [
   {
@@ -88,10 +86,9 @@ export default function ProfilePage() {
       }
       document.body.classList.toggle("profile-page");
     };
-  },[]);
+  }, []);
   return (
     <>
-      <ExamplesNavbar />
       <div className="wrapper">
         <div className="page-header">
           <img
@@ -440,7 +437,6 @@ export default function ProfilePage() {
             </Row>
           </Container>
         </section>
-        <Footer />
       </div>
     </>
   );

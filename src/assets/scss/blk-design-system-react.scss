@@ -16,7 +16,7 @@
 
 */
 
-$asset-base-path: '../../../../assets' !default;
+$asset-base-path: "../../../../assets" !default;
 
 // Core
 
@@ -116,3 +116,7 @@ $asset-base-path: '../../../../assets' !default;
 // React Differences
 
 @import "blk-design-system-react/react/react-differences";
+
+.main {
+  padding-top: 50px;
+}
