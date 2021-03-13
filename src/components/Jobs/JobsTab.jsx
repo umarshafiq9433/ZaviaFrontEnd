@@ -29,8 +29,6 @@ import {
 } from "reactstrap";
 
 export default function JobsTab() {
-  const [iconTabs, setIconsTabs] = React.useState(1);
-  const [textTabs, setTextTabs] = React.useState(4);
   return (
     <div className="section section-tabs">
       <Container>
@@ -61,6 +59,13 @@ export default function JobsTab() {
                 <h5 className="float-right">Timming: 09:00am to 05:00pm</h5>
               </CardBody>
               <CardFooter className="text-right">
+                <Button
+                  className="btn-icon btn-round"
+                  color="success"
+                  type="button"
+                >
+                  <i className="tim-icons icon-heart-2" />
+                </Button>
                 <Button color="success">Apply Now</Button>
               </CardFooter>
             </Card>
@@ -88,6 +93,13 @@ export default function JobsTab() {
                 <h5 className="float-right">Timming: 09:00am to 05:00pm</h5>
               </CardBody>
               <CardFooter className="text-right">
+                <Button
+                  className="btn-icon btn-round"
+                  color="success"
+                  type="button"
+                >
+                  <i className="tim-icons icon-heart-2" />
+                </Button>
                 <Button color="success">Apply Now</Button>
               </CardFooter>
             </Card>
@@ -115,6 +127,13 @@ export default function JobsTab() {
                 <h5 className="float-right">Timming: 09:00am to 05:00pm</h5>
               </CardBody>
               <CardFooter className="text-right">
+                <Button
+                  className="btn-icon btn-round"
+                  color="success"
+                  type="button"
+                >
+                  <i className="tim-icons icon-heart-2" />
+                </Button>
                 <Button color="success">Apply Now</Button>
               </CardFooter>
             </Card>
@@ -142,6 +161,13 @@ export default function JobsTab() {
                 <h5 className="float-right">Timming: 09:00am to 05:00pm</h5>
               </CardBody>
               <CardFooter className="text-right">
+                <Button
+                  className="btn-icon btn-round"
+                  color="success"
+                  type="button"
+                >
+                  <i className="tim-icons icon-heart-2" />
+                </Button>
                 <Button color="success">Apply Now</Button>
               </CardFooter>
             </Card>

@@ -177,15 +177,15 @@ export default function IndexNavbar() {
                 Jobs
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
+                <DropdownItem href="/jobs">
                   <i className="tim-icons icon-paper" />
                   Find Job
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/register-page">
+                <DropdownItem tag={Link} to="/">
                   <i className="tim-icons icon-bullet-list-67" />
                   Post Job
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
+                <DropdownItem tag={Link} to="/aboutUs">
                   <i className="tim-icons icon-image-02" />
                   About Us
                 </DropdownItem>
